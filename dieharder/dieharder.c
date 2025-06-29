@@ -6,7 +6,13 @@
 
 #include "dieharder.h"
 
-
+unsigned int tflag,tflag_default
+char table_separator
+int dtest_num;
+char dtest_name[128];
+char generator_name[128];
+double rng_avg_time_nsec,rng_rands_per_second;
+double strategy;
 /*
  * For Command Line Interface (CLI) dieharder, main() is just a shell for
  * routines that parse the command line, do all the requested work, and
